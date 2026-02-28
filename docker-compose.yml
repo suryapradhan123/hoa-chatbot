@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  hoa-chatbot:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./documents:/app/documents
+      - ./chroma_db:/app/chroma_db
+    env_file:
+      - .env
+    environment:
+      - API_HOST=0.0.0.0
+      - API_PORT=8000
+    restart: unless-stopped
