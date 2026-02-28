@@ -115,12 +115,12 @@ def send_whatsapp_message(to: str, message: str) -> bool:
         return False
     
     try:
-        message = twilio_client.messages.create(
+        sent_message = twilio_client.messages.create(
             body=message,
             from_=settings.twilio_whatsapp_number,
             to=to
         )
-        logger.info(f"Sent WhatsApp message to {to}, SID: {message.sid}")
+        logger.info(f"Sent WhatsApp message to {to}, SID: {sent_message.sid}")
         return True
     except Exception as e:
         logger.error(f"Error sending WhatsApp message: {e}")
