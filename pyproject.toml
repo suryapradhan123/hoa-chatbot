@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hoa-chatbot"
+version = "1.0.0"
+description = "A Condominium Association ChatBot using RAG"
+readme = "README.md"
+requires-python = ">=3.8,<3.13"
+dependencies = [
+    "fastapi==0.109.2",
+    "uvicorn[standard]==0.27.1",
+    "python-multipart==0.0.22",
+    "langchain==0.3.27",
+    "langchain-community==0.3.27",
+    "langchain-openai==0.3.0",
+    "chromadb==0.4.22",
+    "pypdf==4.0.1",
+    "python-dotenv==1.0.1",
+    "twilio==8.12.0",
+    "pydantic==2.10.4",
+    "pydantic-settings==2.4.0",
+    "openai==1.58.1",
+    "tiktoken==0.8.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/suryapradhan123/hoa-chatbot"

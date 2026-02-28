@@ -42,7 +42,7 @@ A Condominium Association ChatBot that uses RAG (Retrieval Augmented Generation)
 
 ### Prerequisites
 
-- Python 3.8 or higher
+- Python 3.8 to 3.12 (Python 3.13+ is not yet supported due to dependency compatibility)
 - OpenAI API key
 - (Optional) Twilio account for WhatsApp integration
 
