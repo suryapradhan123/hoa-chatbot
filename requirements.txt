@@ -1,0 +1,14 @@
+fastapi==0.109.2
+uvicorn[standard]==0.27.1
+python-multipart==0.0.9
+langchain==0.1.9
+langchain-community==0.0.24
+langchain-openai==0.0.6
+chromadb==0.4.22
+pypdf==4.0.1
+python-dotenv==1.0.1
+twilio==8.12.0
+pydantic==2.6.1
+pydantic-settings==2.1.0
+openai==1.12.0
+tiktoken==0.6.0
